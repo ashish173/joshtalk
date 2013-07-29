@@ -1,1 +1,1 @@
-## My talk at Josh Software on Regular Expressions in Ruby
+## My talk on Regular Expressions in Ruby
