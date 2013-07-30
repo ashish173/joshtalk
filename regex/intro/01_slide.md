@@ -5,18 +5,17 @@
 ### @ashish173 ###
 
 !SLIDE code small commandline incemental
-# During the talk #
+# Index #
 * Introduction/Basic functionality
 * How to use in Ruby?
 * Some Advanced Functionality
-* Magic in Background?
 * Real World Use Cases
 * AND SOME HACKING!!!
 
 !SLIDE code small
 # INTRODUCTION #
 * A nice way to match patterns
-* Describe petterns in a string
+* Describe patterns in a string
 * Used for testing presence of patterns 
 * And also extracting matched patterns
 
@@ -30,8 +29,8 @@
   nyc (and believe me thats the least you can do 
   with regexes!!)
 
-!SLIDE code small commandline incremental
-# Ruby Regexes!!! # 
+!SLIDE code small bullet incremental
+# Ruby Regexes!!!  
     $ >>> /Invest/.match("Investigations")
       => #<MatchData "Invest" >
 
@@ -56,7 +55,7 @@
 
 !SLIDE code small bullet incremental
 #BASICS OF REGULAR EXPRESSIONS #
-* MatchData object is a object that behaves 
+* MatchData object is an object that behaves 
   similar to a list 
 
 * >>> m1 = /Ruby/.match("I am in Love with Ruby and Python")

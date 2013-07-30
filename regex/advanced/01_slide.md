@@ -14,15 +14,15 @@
 !SLIDE code small bullet incremental
 # CAPTURING #
 * capture group can be referred by name when defined with
-  \(\?\<name\>\)
+  \(?\<name\>\)
 
-* /\$\(\?\<dollars\>\d+\)\.\(\?\<cents\>\\d\+)/.match("$3.67")
+* /\$\(?\<dollars\>\d+\)\.\(?\<cents\>\\d\+)/.match("$3.67")
   => #<MatchData "$3.67" dollars:"3" cents:"67">
 
 * named groups can be backrefernced with \k<name>; 
   name is the group name
 
-* /\(\?\<wel>\[aeiou\]\)\.\\k\<wel\>\.\\k\<wel\>/.match("ototomy")
+* /\(?\<wel>\[aeiou\]\)\.\\k\<wel\>\.\\k\<wel\>/.match("ototomy")
   => #<MatchData "ototo" vowel:"o">
 
 * when =~ operator is used captured text is assigned to 
@@ -40,7 +40,7 @@
 
 !SLIDE code small bullet incremental
 # CAPTURING #
-* \(\?:..\) construct provides grouping without capturing
+* \(?:..\) construct provides grouping without capturing
   
 * It combines terms without creating a backreference.
 
@@ -86,8 +86,8 @@
 !SLIDE code small bullet incremental
 # ANCHORS #
 
-* Anchors are metacharacters that match the zero-width 
-  positions between character.
+* Anchors are metacharacters that match the 
+  zero-width (positions) between character.
 
 * ^ \(Caret\) - matches begining of line
 
@@ -101,7 +101,7 @@
 # ANCHORS #
 * \(?=pat\) - Positive lookahead assertion 
 
-* \(\?!pat\) -Negative lookahead assertion
+* \(?!pat\) -Negative lookahead assertion
 
 * \\B - matches non-word boundaries
 
