@@ -210,4 +210,15 @@
 !SLIDE code small bullet incremental
 # QUANTIFIERS #
 
-* 
+* **\{,m\}** - m or less times
+
+* **\{n,m\}** - Atleast n and at most m times
+
+* A greedy metacharacter can be made lazy by
+  following it with ?.
+
+* /<.+>/.match("\<a\>\<b\>")
+  => #\<MatchData "\<a\>\<b\>">
+
+* /<.+?>/.mathc("\<a\>\<b\>")
+  => #\<MatchData "\<a\>">    made lazy by adding '?'  
