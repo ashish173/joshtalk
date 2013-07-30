@@ -200,7 +200,7 @@
 
 * **\+** - One or more times 
 
-* **\?** - Zero or more times optional
+* **?** - Zero or more times optional
 
 * **\{n\}**  - Exactly n times
 
