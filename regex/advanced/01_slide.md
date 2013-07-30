@@ -39,20 +39,6 @@
 
 
 !SLIDE code small bullet incremental
-# GROUPING #
-
-* Parens are used for grouping.
-
-* /\[aeiou\]\\w\{2\}/.match("Caenorhabditis elegans")
-  => #<MatchData "aen">
-
-* /\(\[aeiou\]\\w\)\{2\}/.match("Caenorhabditis elegans")
-  => #<MatchData "enor" 1:"or">
-
-* MatchData[1] = "or" the last match
-
-
-!SLIDE code small bullet incremental
 # CAPTURING #
 * \(\?:..\) construct provides grouping without capturing
   
@@ -69,6 +55,20 @@
 * the first group is omitted 
 
 !SLIDE code small bullet incremental
+# GROUPING #
+
+* Parens are used for grouping.
+
+* /\[aeiou\]\\w\{2\}/.match("Caenorhabditis elegans")
+  => #<MatchData "aen">
+
+* /\(\[aeiou\]\\w\)\{2\}/.match("Caenorhabditis elegans")
+  => #<MatchData "enor" 1:"or">
+
+* MatchData[1] = "or" the last match
+
+
+!SLIDE code small bullet incremental
 # ALTERNATION #
 
 * The Vertical bar metacharacter(|) combines two expression 
@@ -81,20 +81,6 @@
 
 * /\\w\(and\|or\)\\w/.match("furandi")
   => #<MatchData "randi" 1:"and">
-
-
-!SLIDE code small bullet incremental
-# CHARACTER PROPERTIES #
-
-* The \\p\{\} construct matches character with named property.
-
-* /\\p\{Alnum\}/ - Alphabetic and Numeric character
-
-* /\\p\{Alpha\}/ - Alphabetic character
-
-* /\\p\{digit\}/ - Digit 
-
-* /\\p\{Punct\}/ - Punctuation character
 
 
 !SLIDE code small bullet incremental

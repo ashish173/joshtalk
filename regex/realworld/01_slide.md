@@ -70,12 +70,12 @@
 # CLEANING TEXT #
 
 * You are given a text and you have to remove empty lines
-
-    regex = /\s+/
-    puts "   hello   world
+    text = "   hello   world
     the space   
 
-    is nice here!    ".gsub(regex, ' ')   
+    is nice here!    "
+    regex = /\s+/ # matches for spaces
+    text.gsub(regex, ' ')   
     # =>  hello world the space is nice here! 
 
 !SLIDE code small bullet incremental

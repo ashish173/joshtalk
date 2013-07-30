@@ -165,29 +165,26 @@
 !SLIDE code small bullet incremental
 # REPETITIONS #
 
-* So far we have beem mostly matching single
-  characters.
-
 * All the metacharacters can be followed by 
   a repitition metacharacter to specify how
   many times they need to occur.
 
 * Such metacharacters are called quantifiers.
 
-* /Jo[a-z]+/.match("Joshsoftware is ruby shop in india")
+* /Jo[a-z]+/.match("Joshsoftware is a ruby shop")
   => #<MatchData "Joshsoftware">
 
 
 !SLIDE code small bullet incremental
 # REPETITIONS  #
 
-* ' + ' in last example is for one or more 
+* **+**  in last example is for one or more 
   occurrence of any character b/w a to z.
 
 * /Jo[a-z]*/.match("Jo bhi main kehna chahun")
   => #<MatchData "Jo"> 
 
-* ' * ' in above example is for zero or more
+* **\*** in above example is for zero or more
   occurrences of any character b/w a to z.
 
 * More Quanifiers in next slide.
@@ -200,7 +197,7 @@
 
 * **\+** - One or more times 
 
-* **?** - Zero or more times optional
+* **?** - Zero or more times **optional**
 
 * **\{n\}**  - Exactly n times
 
