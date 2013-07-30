@@ -68,13 +68,6 @@
 
 * the first group is omitted 
 
-
-
-!SLIDE code small bullet incremental
-# ATOMIC GROUPING #
-* 
-
-
 !SLIDE code small bullet incremental
 # ALTERNATION #
 
