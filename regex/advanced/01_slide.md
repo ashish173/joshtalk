@@ -22,11 +22,11 @@
 * named groups can be backrefernced with \k<name>; 
   name is the group name
 
-* /\(?\<wel>\[aeiou\]\)\.\\k\<wel\>\.\\k\<wel\>/.match("ototomy")
+* /\(?\<vowel\>\[aeiou\]\)\.\\k\<vowel\>\.\\k\<vowel\>/.match("ototomy")
   => #<MatchData "ototo" vowel:"o">
 
-* when =~ operator is used captured text is assigned to 
-  local varables.
+* when =~ operator is used captured text is 
+  assigned to local varables.
 
 
 !SLIDE code small bullet incremental
@@ -40,11 +40,11 @@
 
 !SLIDE code small bullet incremental
 # CAPTURING #
-* \(?:..\) construct provides grouping without capturing
+* \(?:..\) construct provides grouping without 
+  capturing
   
-* It combines terms without creating a backreference.
-
-* Improves Performance.
+* It combines terms without creating a 
+  backreference; Improves Performance.
 
 * /I(n)ves(ti)ga\2ons/.match("Investigations")
   => #<MatchData "Investigations" 1:"n" 2:"ti">
@@ -57,7 +57,7 @@
 !SLIDE code small bullet incremental
 # GROUPING #
 
-* Parens are used for grouping.
+* Parenthesis are used for grouping.
 
 * /\[aeiou\]\\w\{2\}/.match("Caenorhabditis elegans")
   => #<MatchData "aen">
@@ -71,8 +71,8 @@
 !SLIDE code small bullet incremental
 # ALTERNATION #
 
-* The Vertical bar metacharacter(|) combines two expression 
-  into a single one.
+* The Vertical bar metacharacter(|) combines two 
+  expression into a single one.
 
 * Either of the two expressions are matched.
 

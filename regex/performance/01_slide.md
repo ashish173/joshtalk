@@ -35,5 +35,5 @@
 ## Babynames Problem ##
 
 !SLIDE code small bullet incremental
-# THANKS YOU #
+# THANK YOU!!! #
 ## QUESTIONS ##

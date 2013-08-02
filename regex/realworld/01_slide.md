@@ -31,13 +31,13 @@
 !SLIDE code small bullet incremental
 # VALIDATING EMAILS #
 
-* /^[A-Za-z0-9+_\-]+@[A-Za-z0-9+_\-]+$/.match
+* /^[A-Za-z0-9+\_\-]+@\\S\+$/.match
   ("ashish_173@joshsoftware12.com")
   => #<MatchData "ashish_173@joshsoftware12.com">
 
 * but this will fail for ashish.singh@gmail.com
   
-* /^[A-Za-z0-9+_.\-]+@[A-Za-z0-9+_.\-]+$/.match
+* /^[A-Za-z0-9+\_\.\-]+@[A-Za-z0-9\+\_\.\-]+$/.match
   ("ashish_1.73@joshsoftware12.com")
   => #<MatchData "ashish_1.73@joshsoftware12.com">
 
@@ -69,7 +69,8 @@
 !SLIDE code small bullet incremental
 # CLEANING TEXT #
 
-* You are given a text and you have to remove empty lines
+* You are given a text and you have to remove 
+  empty lines and spaces.
     text = "   hello   world
     the space   
 
